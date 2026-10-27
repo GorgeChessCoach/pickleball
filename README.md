@@ -8,4 +8,4 @@ Stats show Me, partner, and Team. Unclear points and opponents remain separate. 
 
 Open index.html using a static web server. No build or external dependencies. Run `node test.cjs` for outcome and archive tests.
 
-The opening home screen offers New game, History and Today's stats. History groups games by the phone's local calendar date, with daily totals for Me and each named partner, and both players' stats on each game row. Today's stats filters the same view to today. Unclear points and opposing-team entries do not count toward individual totals. New game offers Resume unfinished game when applicable.
+The opening home screen offers New game, History and Today's stats. History groups games by the phone's local calendar date, with daily totals for Me and each named partner, and both players' stats on each game row. Today's stats filters the same view to today. Unclear points and opposing-team entries do not count toward individual totals. Home and History offer Resume game while a game is unfinished. History has All games and Today tabs. Page navigation provides Home, contextual Back, and New game or Resume game.
