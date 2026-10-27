@@ -7,3 +7,5 @@ Tap History or swipe right to browse completed games; tap Game or swipe left to 
 Stats show Me, partner, and Team. Unclear points and opponents remain separate. History shows only your winners, UE and BSS.
 
 Open index.html using a static web server. No build or external dependencies. Run `node test.cjs` for outcome and archive tests.
+
+The opening home screen offers New game, History and Today's stats. History groups games by the phone's local calendar date, with daily totals for Me and each named partner, and both players' stats on each game row. Today's stats filters the same view to today. Unclear points and opposing-team entries do not count toward individual totals. New game offers Resume unfinished game when applicable.
