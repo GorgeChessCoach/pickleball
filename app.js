@@ -25,6 +25,7 @@ if(page==='home'){app.append(el('h2','Ready to play?'));const actions=el('div',u
 const nav=el('nav',undefined,'page-nav');nav.setAttribute('aria-label','Page navigation');
 const active=game&&!game.score;const next=()=>navigate(active?'play':'setup');
 const routes=page==='setup'?[['‹ Home',()=>navigate('home')]]:page==='play'?[['‹ Home',()=>navigate('home')],['History ›',openHistory]]:page==='finish'?[['‹ Game',()=>navigate('play')],['Home',()=>navigate('home')]]:page==='past'?[['‹ History',()=>navigate('history')],[active?'Resume game':'New game',next]]:[['‹ Home',()=>navigate('home')],[active?'Resume game':'New game',next]];
+if(page==='stats')routes.splice(1,0,["Today’s Stats",()=>{returnPage=page;historyMode='today';navigate('history')}]);
 routes.forEach(([label,fn])=>nav.append(button(label,fn)));app.append(nav);
 if(page==='history'){renderHistory();return}
 if(page==='past'){renderStats(viewed,true);return}
